@@ -6,7 +6,7 @@
 
 pip istall qrcode
 
-# Import a biblioteca qrcode no IDE
+# Importar a biblioteca qrcode no IDE
 
 import qrcode
 
