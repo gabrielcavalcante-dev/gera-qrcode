@@ -4,24 +4,21 @@
 
 ### Instale a biblioteca qrcode no terminal
 
-pip istall qrcode
+      pip istall qrcode
 
-### Importe a biblioteca qrcode no IDE
+Algoritmo para gerar o QrCode
 
-import qrcode
+      #Importe a biblioteca qrcode no IDE
+      import qrcode
 
-### Entrada da URL
+      #Entrada da URL
+      link = input("URL: ")
 
-link = input("URL: ")
+      #Gerando QrCode
+      qrcode = qrcode.make(link)
 
-### Gerando QrCode
+      #Salvando imagem QrCode
+      qrcode.save("qrcode.jpg")
 
-qrcode = qrcode.make(link)
-
-### Salvando imagem QrCode
-
-qrcode.save("qrcode.jpg")
-
-### Mensagem que retorna quando o processo é finalizado com êxito
-
-print("Pronto!")
+      #Mensagem que retorna quando o processo é finalizado com êxito
+      print("Pronto!")
